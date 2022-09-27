@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+{%load static%}
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+
+<body style="background-image: url({% static fondo %}); Background-size: cover;">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> Projectos</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'index' %}">Inicio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <div class="container text-center mt-5">
+        <div class="row justify-content-center align-items-center g-2">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static project1 %}" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">{{nombre1}}</h5>
+                        <p class="card-text">Año: {{año1}}<br>Cliente: {{cliente}}<br>{{detalle1}}<br>Duracion: {{duracion1}}</p>
+                        <a class="btn btn-primary" href="{{link1}}">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static project2 %}" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">{{nombre2}}</h5>
+                        <p class="card-text">Año: {{año2}}<br>Cliente: {{cliente2}}<br> {{detalle2}} <br>Duracion: {{duracion2}}</p>
+                        <a class="btn btn-primary" href="{{link2}}">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static project3 %}" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">{{nombre3}}</h5>
+                        <p class="card-text">Año: {{año3}}<br>Cliente: {{cliente3}}<br> {{detalle3}} <br>Duracion: {{duracion3}}</p>
+                        <a class="btn btn-primary" href="{{link3}}">Visitar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
